@@ -36,3 +36,40 @@ Output :
 Teacher name: sangeetha
 Student name: navya
 Student Roll No: 5U8
+
+
+
+
+\\other example
+
+
+
+
+package com.u8;
+class Animal
+{
+	 void eat() 
+	 {
+	     System.out.println("This animal eats food.");
+	 }
+}
+class Dog extends Animal 
+{
+	 void bark()
+	 {
+	     System.out.println("The dog barks.");
+	 }
+}
+public class inheritance 
+{
+	public static void main(String[] args)
+	{
+		Dog d = new Dog();
+	     d.eat();  // inherited from Animal
+	     d.bark(); // defined in Dog
+	}
+}
+output:
+This animal eats food.
+The dog barks.
+
