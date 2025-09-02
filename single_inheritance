@@ -1,0 +1,38 @@
+package Com.sample;
+
+// Parent class
+class Teacher {
+    String name;
+
+    public void data() {
+        System.out.println("Java course");
+    }
+}
+
+// Child class
+class Student extends Teacher {
+    String rollNo;
+}
+
+// Main class
+public class College {
+    public static void main(String[] args) {
+        // Teacher object
+        Teacher T = new Teacher();
+        T.name = "sangeetha";
+        System.out.println("Teacher name: " + T.name);
+
+        // Student object
+        Student S = new Student();
+        S.name = "navya";
+        System.out.println("Student name: " + S.name);
+
+        S.rollNo = "5U8";
+        System.out.println("Student Roll No: " + S.rollNo);
+    }
+}
+
+Output :
+Teacher name: sangeetha
+Student name: navya
+Student Roll No: 5U8
