@@ -1,0 +1,30 @@
+package com.u8;
+class Access
+{
+    private String name;
+    private int age;
+    Access(String name,int age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    private void data(String name,int age)
+    {
+        System.out.println("Name:"+name+"\n"+"Age:"+age);
+    }
+    void accessdata()
+    {
+        data(name,age);
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Access a=new Access("navya",19);
+	    a.accessdata();
+		
+	}
+}
